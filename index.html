@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='hchino ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='hchinoのポートフォリオサイトっぽい何かです'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="hchinoのポートフォリオサイトっぽい何かです" />
+  <title>hchino ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav id="gnav" class="fixed">
+      <ul>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <header id="header">
+      <div class="inner">
+        <h1 class="logo">
+          <div class="logo-title">HIROKI CHINO</div>
+          <div class="logo-desc">茅野 宏紀</div>
+          <div class="logo-desc">ポートフォリオっぽい何か</div>
+        </h1>
+      </div>
+    </header>
+      <section class="section" id="works">
+        <div class="inner">
+          <div class="section-title-area">
+            <h2 class="section-title">WORKS</h2>
+            <div class="section-intro">
+              過去に取り組んだものとか遊んだものです<br class="pc">
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="section-image">
+              <a  class="hover-action-01" target="_blank"><img
+                  src="img/works/like-instagram.png" alt=""></a>
+            </div>
+            <div class="section-desc">
+              <div class="section-text">
+                <span class="text-bold">作品タイトル</span><br>インスタグラムもどき<br><a href="https://like-instagram.herokuapp.com/home"
+                  target="_blank">作品ページ</a><br>
+                <span class="text-bold">担当：</span><br>全部<br>
+                <span class="text-bold">使用スキル：</span><br>docker, laravel, PostgreSQL, php, html, css<br>
+                <span
+                  class="text-bold">概要：</span><br>2019年9月後半の2週間にTeamLabにインターンに行った時に作ったものです。herokuに公開しています。<br>
+                  インスタっぽいものを作ろうというテーマで作成したものです。github認証を用いており、投稿するとgithubのユーザ名とアイコンで投稿されます。未ログインではタイムラインの閲覧しかできません。またいいね機能がついており、いいねの数をクリックするといいねしたユーザーが見えるようになってます。これもログイン時の機能です。あとユーザページには投稿一覧といいね総数が見れるようになっています。いいね機能はajaxを用いて非同期通信しているので特にページ遷移などは起きません。<br>ちなみに自分がテストした以外誰にも使ってもらってないので登録ユーザは私だけです...<br>現在確認しているバグとしていいねを連打すると数値が無限に上げるもしくは下げることができます。要するに連打時の処理ができてないです。<span class="text-bold">気が向いたら</span>いいねの数値が変動するまでクリック処理を受け付けないように直します。
+              </div>
+            </div>
+
+            <div class="section-desc">
+              <div class="section-text">
+                <span class="text-bold">作品タイトル</span><br>在庫管理もどき<br><a href="https://mxdkanritest.herokuapp.com/"
+                  target="_blank">作品ページ</a><br><br>
+                <span class="text-bold">担当：</span><br>全部<br>
+                <span class="text-bold">使用スキル：</span><br>XAMPP, apache, MySQL, php, html, css<br>
+                <span
+                  class="text-bold">概要：</span><br>こちらもTeamLabのインターン関連で、インターンに行く前の技術テスト的なポジションで作ったものです。herokuに公開しています。<br>
+                  リストに書いてある内容を保存and検索する機能と、追加削除できる機能がついています。商品名や値段は問題ないのですが、herokuでは画像ファイルを作成できないとのことで画像の登録ができていないです。解決策としてbase64エンコードして保存してそれをデコードして表示するというものがありますが、一度試してみてうまくいかずそのまま放置となってしまった作品です。<br>
+              </div>
+            </div>
+            <div class="section-image">
+              <a class="hover-action-01" target="_blank"><img
+                  src="img/works/like-zaikokanri.png" alt=""></a>
+            </div>
+
+            <div class="section-image">
+              <a class="hover-action-01" target="_blank"><img
+                  src="img/works/alchole.png" alt=""></a>
+            </div>
+            <div class="section-desc">
+              <div class="section-text">
+                <span class="text-bold">作品タイトル</span><br>アルこ〜る<br>
+                <!-- <a href="https://like-instagram.herokuapp.com/home" target="_blank">作品ページ</a><br> -->
+                <span class="text-bold">担当：</span><br>サーバサイドとチャットシステム<br>
+                <span class="text-bold">使用スキル：</span><br>nginx, nodejs, html, css, webRTC, websocket<br>
+                <span
+                  class="text-bold">概要：</span><br>2018年のyahooハッカソンに参加した時に作った作品です。研究室のメンバーと合わせて4人で参加しました。期間は2週間、テーマは「コール&レスポンス」
+                  ということで酒飲み同士が繋がれるウェブ通話アプリ「アルこ〜る(アルコール + call)」を開発。
+                  制作理由は<span class="text-bold">「俺が欲しかったから」</span>ここ重要。<br>
+                  システム想定は「居酒屋を家で再現する」ことで、通話は1グループ最大4人(居酒屋の1テーブルを想定)、チャットはサイトにアクセスしている全員に通じる(居酒屋で他の席から聞こえてくる会話みたいな想定)ようになっている。<br>
+                  自身の担当範囲はサーバ関連と通話や文字でのチャット機能の実装をした。
+                  nginxとnode.jsサーバをたてた。通信はsocketを使ってP2P通信で行ない、音声通話についてはwebRTCを使った。最初は映像付でやっていたけどプライバシーとかの方面考えるといらなくない？となったので撤去。ついでにユーザ機能もいらない(もといわからない&時間ない)となって毎回匿名で接続するようになった。映像ON/OFF機能も作ったけどそもそもONいらないと言われたので撤去。悲しい。そのくせよく考えたら音声ミュート機能作ってなかったなって今これを書きながら思いました。あとはLINE風チャットを作った。
+                  <br>
+                  <span class="text-bold">結局ユーザの概念を消したせいで闇鍋斎藤さんみたいになった。</span>特に公開などはしてないが手直しをして公開する日がくるかもしれない...
+              </div>
+            </div>
+
+            <h2 class="section-title">その他</h2>
+            <div class="section-text">
+              <span class="text-bold">授業でやったやつとか、ちょっと作った程度のやつとか、全然未完のやつとか、作ったのが見つからないとかを箇条書き程度に</span><br><br>
+
+              <span class="text-bold">Watashi ha Onigiri desu(私はおにぎりです)</span><br>
+              学部3年の時に研究室に来ていた海外留学生と一緒に作ったもの。Unityとアマゾンダッシュボタンを使った。IoTボタンを使ってゲームを作る、という課題のもと作った。2チームに分かれて行うゲームであり、IoTボタンをパワーアップアイテムとして考えり、片方のチームが現実世界にIoTボタンを隠し、もう片方のチームが探し出す。見つけたボタンを押せばUnity側のゲームのキャラクターが強くなる、もしくは有利に働くイベントが発生するといったものである。これを各チーム交互にやってスコアを競うといった内容。<br>
+              IoTボタンで何かを操作するにはラグが発生していまいち思ったようにならないため、このように現実とリンクさせたゲームを作ることになった。個人的にこのアイデアはすごく気に入っている。
+              <a href="https://sites.google.com/site/ictchallenger2017/" target="_blank">「あいちゃれ」</a>という学内のコンテスト(今はもう開催されてないらしい)で入賞した。動画はリンクがなかった...<br><br>
+
+              <span class="text-bold">ラボ内珍発言bot</span><br>
+              昔twitterのbot作ってなんか作りたいなと思った時に考えていたもの。その時は何つぶやくか考えてなかったし、知識も全然なかったので未完成のままだった。<br>
+              2019/12/06 ラボでの頭のおかしい発言をメモ残してみたい、みたいな発言によりやる気がちょっと出てきたのでラボ内珍発言botとして復活するかもしれない。<br><br>
+
+              <span class="text-bold">授業でやったUnityを使ったゲーム(カケルプロジェクト)</span><br>
+              学部3年の時にUnityとHMDを使ってVRゲームを作成した。「カケル」がテーマであり、「翔」や「書ける」など、ギャグでもいいので「カケル」を使うのが題材だった。班員は確か7名？で自分はイベント発火などのスクリプトの作成担当した。操作キャラの座標や経過時間でのフラグ管理が基本だった。あと非現実的なことを題材にしてたため空の色を変えたりホラーっぽく光源や音源をいじったりもした。10班中3位だった記憶がある。<br><br>
+
+              <span class="text-bold">授業でやったホームページ作成</span><br>
+              こちらも学部3年の時に授業でやった内容。IT用語を調べて、その内容を紹介するホームページを作成すると言った内容。当班の課題は「プロジェクションマッピング」だった。調べる部分は置いといて、ホームページではjQueryを使って画像の自動スクロールや自動切り替えとかを作った記憶がある。あと発表時にスマホの映像の上に4枚の透明フィルムを置いてスマホの上に立体映像を出した記憶がある。
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <div class="inner">
+          <div class="section-title-area">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="section-intro">
+              自己紹介 & 自己アピール
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="section-image">
+              <img class="lazyload fadein" data-src="img/about/pro.jpg" alt="">
+            </div>
+            <div class="section-desc">
+              <div class="section-text">
+                立命館大学大学院情報理工学研究科情報理工学専攻人間情報科学コース 修士1年(2019年12月現在)
+                <br>
+                鹿の国こと奈良県出身でお酒飲むのが好きな23歳
+                <br><br>
+                面白そうと思ったらとりあえず取り組んでみるけど長続きしないマン。長所であり短所であると思ってるけど短所の割合の方が大きそう...
+                広く浅くをしてたら自分の強みないことに気付く。なので最近はWebエンジニアとか面白そうだなと思い始めて本格的に勉強し始めてます。
+                <br>
+                研究内容が主題分析というか課題抽出というか、あまり専門的な技術を使わない方向に進み始めて辛い。
+                プログラミング技術よりディベートとかのスキルの方が上がったのでは？と思い始めてます。
+                <br>
+                運よく開発系のバイトを紹介してもらったのでやってます。内容は近頃流行りの機械学習とか色々、楽しいやつもあればそうでないのも...
+                <br><br>
+                エンジニアとして活躍したいと思うこともありますが、開発の指揮をとってみたいとも思い始めました。全くもって経験ないですが。
+                正直、ただプログラミング技術を磨いてエンジニアになるのであればそれこそ専門学校とかに行けばいいと思っているので、せっかく大学院まで進んだ以上、強みを活かしたいと考えました。
+                そう考えると、やはり研究に対する考え方やスケジュールの調整、私の場合は共同研究を行なっているので共同研究先との連携などが強みであると自負しています。
+                <br>
+                なのでそれらの能力を活かせるような環境で頑張りたいと考えています。
+                あとは一緒にお酒飲みにいける仲間がいる環境、これ大事です。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="skill">
+        <div class="inner">
+          <div class="section-title-area">
+            <h2 class="section-title">SKILL</h2>
+            <div class="section-intro">
+              使ったことあるもの一覧<br>
+              思いついたものだけ<br>
+              星1は触ったことある程度<br>
+              星2,3はある程度使えるやつ<br>
+              星4は何かしらを作成したやつ<br>
+              典型的日本人なんで星5なんてない<br>
+            </div>
+          </div>
+          <div class="section-body card-wrapper">
+            <div class="card">
+              <div class="skill-icon">
+              </div>
+              <div class="skill-desc">
+                <div class="rating">
+                  <div class="rate rate1"></div>
+                </div>
+                <div class="section-text">
+                  機械学習 : 勉強中,バイトでも使ってるけどほんとに使ってるだけ。<br>
+                  Go : 勉強中<br>
+                  Ruby on Rails : 勉強中<br>
+                  node.js : 使いこなせる気がしない<br>
+                  docker : 使いこなせる気がしない<br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+              </div>
+              <div class="skill-desc">
+                <div class="rating">
+                  <div class="rate rate2"></div>
+                </div>
+                <div class="section-text">
+                  Adobe関連 : 簡単な編集<br>
+                  AWS関連 : EC2などの一部機能だけ<br>
+                  Google Colaboratory : 学習回す際とかにお世話になってます。<br>
+                  Unity : 授業で使ってちょっとしたゲームつくった
+                  github : コード保管用として使ってる程度、大規模開発で複数人で使ったりとかはない<br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+              </div>
+              <div class="skill-desc">
+                <div class="rating">
+                  <div class="rate rate3"></div>
+                </div>
+                <div class="section-text">
+                  Python : 研究とかでも普段使いしてる言語<br>
+                  C : 学部時代に授業でやったのでそこそこ使える<br>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="skill-icon">
+              </div>
+              <div class="skill-desc">
+                <div class="rating">
+                  <div class="rate rate4"></div>
+                </div>
+                <div class="section-text">
+                  星4は何かしら作ったことあるやつ(使いこなせるとは言ってない)<br>
+                  html : js,jquery含めそこそこできる(と思う)<br>
+                  php : こちらも同様<br>
+                  MySQL : WORKで紹介したのとか使ってたら覚えた<br>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="section" id="contact">
+        <div class="inner">
+          <div class="section-title-area">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="section-intro">
+              お問い合わせは、SNSかメールでお願いいたします。
+            </div>
+          </div>
+          <div class="section-body contact-wrapper">
+            <div class="contact-list">
+              <ul>
+                <li><a href="https://www.facebook.com/Hiroki.0830?ref=bookmarks" target="_blank"><img src="img/contact/icon_fb.png" alt=""></a>
+                </li>
+              </ul>
+              <div class="contact-other">hchino@mxdlab.net</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="pageTop">
+        <div id="js-pageTop">
+          Page Top
+        </div>
+      </div>
+      <div class="inner">
+        <div class="copyright">Copyright&copy;Hiroki Chino. All Rights Reserved.</>
+        </div>
+    </footer>
+  </div>
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe.min.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script type='text/javascript' src="js/photoswipe/photoswipe_setup.js"></script>
+  <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+</body>
+</html>
